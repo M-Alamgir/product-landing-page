@@ -5,6 +5,7 @@
   --color-grey: rgb(235, 236, 238);
   --color-yellow: rgb(249, 200, 14);
   --color-grayLight: rgb(242, 242, 242);
+  --color-green: rgb(30, 191, 115);
 }
 
 /* global reset */
@@ -71,7 +72,11 @@ body {
   font-size: 2.5rem;
   font-weight: 500;
   letter-spacing: 2px;
-  color: white;
+  color: var(--color-yellow);
+}
+
+.green {
+    color: var(--color-green);
 }
 
 #home {
@@ -85,6 +90,31 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+.home-img {
+    border: 2px solid transparent;
+    border-radius: 100px;
+    padding: 2rem;
+    animation: pulsate 2s infinite;
+}
+
+@keyframes pulsate {
+    0% {
+        border: 2px solid transparent;
+    }
+    10% {
+        border: 2px solid var(--color-yellow);
+    }
+    20% {
+        border: 2px solid transparent;
+    }
+    50% {
+        border: 2px solid var(--color-yellow);
+    }
+    100% {
+        border: 2px solid transparent;
+    }
 }
 
 .left {
@@ -101,6 +131,7 @@ body {
 
 .yellow {
   color: var(--color-yellow);
+  text-decoration: none;
 }
 
 .lorem {
@@ -118,6 +149,13 @@ body {
   padding: 0.8rem 1rem;
   border: 2px solid var(--color-primary);
   border-radius: 25px 0 0 25px;
+  width: 50%;
+  transition: all .2s;
+}
+
+.form-input:focus {
+    outline: none;
+    width: 70%;
 }
 
 .form-btn {
@@ -157,26 +195,29 @@ body {
   padding: 1rem;
 }
 #footer {
-  height: 30rem;
+  height: 50rem;
   width: 100%;
   background-image: linear-gradient(
       105deg,
-      var(--color-grey) 50%,
-      transparent 50%,
-      transparent 100%
+      rgb(53, 53, 53) 50%,
+      rgba(255,255,255, .3) 50%,
+      rgba(255,255,255, .3) 100%
     ),
-    url("../img/footer.jpg");
+    url("../img/seaview.jpg");
   background-size: cover;
-  background-position: right center;
+  background-position: 0 70%;
 }
 #contact {
-  height: 20rem;
+  height: 40rem;
   width: 100%;
   background-color: var(--color-grayLight);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),url(../img/girl.jpg);
+  background-size: cover;
+  background-position: center;
 }
 .heading2 {
   font-size: 5rem;
@@ -186,10 +227,108 @@ body {
   color: var(--color-grayLight);
 }
 #form {
+    width: 30%;
+    text-align: center;
 }
 #email {
   padding: 1rem;
-  width: 100%;
-  border: 2px solid var(--color-primary);
+  width: 65%;
+  border: 3px solid var(--color-primary);
   border-radius: 25px 0 0 25px;
+}
+
+#submit {
+    padding: 1rem;
+    border: 3px solid var(--color-primary);
+    border-radius: 0 25px 25px 0;
+    margin-left: -1rem;
+    background-color: var(--color-primary);
+}
+
+#email:focus,
+#submit:focus {
+    outline: none;
+}
+
+#products {
+    position: relative;
+}
+
+.vparent{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    z-index: -10000;
+}
+.video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.list {
+    display: inline-block;
+    width: 20%;
+    padding: 5rem 0 0 5rem;
+    cursor: pointer;
+}
+
+.list > * {
+    color: white;
+    margin-bottom: 2rem;
+    list-style: none;
+    text-decoration: underline;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    text-transform: capitalize;
+}
+
+.list1 {
+    display: inline-block;
+    width: 20%;
+    padding: 5rem 0 0 5rem;
+    cursor: pointer;
+}
+
+.list1 > * {
+    color: white;
+    margin-bottom: 2rem;
+    list-style: none;
+    text-decoration: underline;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    text-transform: capitalize;
+}
+
+.footer-links {
+    font-size: 1.6rem;
+    
+}
+
+.copy {
+    font-size: 1.8rem;
+    color: white;
+    letter-spacing: 1px;
+    margin-left: 2rem;
+    margin-top: 10.5rem;
+}
+
+.social {
+    margin-top: 10rem;
+    font-size: 4rem;
+    font-weight: 700;
+    color: white;
+    margin-left: 3rem;
+}
+
+.link-btn {
+    background-color: var(--color-yellow);
+    padding: .5rem 1rem;
+    border: none;
+    border-radius: 100px;
+    color: white;
 }
