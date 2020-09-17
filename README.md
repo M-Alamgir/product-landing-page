@@ -7,6 +7,11 @@ checkout live demo here: https://ourandco.github.io/product-landing-page/
 - HTML5
 - CSS3
 
+### Resources
+Google fonts<br/>
+unsplash.com(images)<br/>
+
+#### BEM METHADOLOGY.
 
 ## Author
 - Alamgir
