@@ -16,3 +16,15 @@ unsplash.com(images)<br/>
 ## Author
 :bust_in_silhouette: Alamgir
 :bust_in_silhouette: Essam
+
+## Show your support
+
+Give a ⭐️ if you like this project
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!
+
+#### Copyrights
+
+- Free to use.
