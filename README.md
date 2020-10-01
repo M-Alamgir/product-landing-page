@@ -11,6 +11,11 @@ checkout live demo here: https://ourandco.github.io/product-landing-page/
 Google fonts<br/>
 unsplash.com(images)<br/>
 
+
+## Getting Started
+
+To get a local copy up and running follow these simple example steps.
+
 ### Setup
 
 1. Clone this repo to your computer using `git clone`
